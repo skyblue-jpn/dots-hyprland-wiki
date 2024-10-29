@@ -31,10 +31,10 @@ export default defineConfig({
         //   label: 'French', //French
         //   lang: 'fr',
         // },
-        // 'ja': {
-        //   label: 'Japanese', //Japanese
-        //   lang: 'ja',
-        // },
+        ja: {
+          label: "Japanese", //Japanese
+          lang: "ja",
+        },
         // 'pl': {
         //   label: 'Polish', //Polish
         //   lang: 'pl',
