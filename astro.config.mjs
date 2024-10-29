@@ -32,7 +32,7 @@ export default defineConfig({
         //   lang: 'fr',
         // },
         ja: {
-          label: "Japanese", //Japanese
+          label: "日本語", //Japanese
           lang: "ja",
         },
         // 'pl': {
@@ -78,6 +78,7 @@ export default defineConfig({
           translations: {
             vi: "Kho lưu trữ (ko đc duy trì)",
             "zh-CN": "存档（不再维护）",
+            ja: "アーカイブ（メンテナンスされていません）",
           },
           autogenerate: { directory: "archives" },
         },
@@ -88,6 +89,7 @@ export default defineConfig({
           translations: {
             vi: "Ghi chú cho dev",
             "zh-CN": "开发者笔记",
+            ja: "開発ノート",
           },
           autogenerate: { directory: "dev" },
         },
@@ -97,6 +99,7 @@ export default defineConfig({
           badge: { text: "Help wanted", variant: "note" },
           translations: {
             "zh-CN": "翻译此文档",
+            ja: "このwikiを翻訳する",
           },
           link: "/dev/doc-site-contrib",
         },
