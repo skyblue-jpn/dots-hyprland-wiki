@@ -1,31 +1,31 @@
-import { defineConfig } from 'astro/config';
-import starlight from '@astrojs/starlight';
+import { defineConfig } from "astro/config";
+import starlight from "@astrojs/starlight";
 
 // https://starlight.astro.build/reference/configuration
 export default defineConfig({
-  site: 'https://end-4.github.io',
-  base: '/dots-hyprland-wiki',
-	integrations: [
-		starlight({
-			title: 'end-4/dots-hyprland',
-			social: {
-				github: 'https://github.com/end-4/dots-hyprland',
-			},
-      editLink: {
-          baseUrl: 'https://github.com/end-4/dots-hyprland-wiki/tree/main',
+  site: "https://end-4.github.io",
+  base: "/dots-hyprland-wiki",
+  integrations: [
+    starlight({
+      title: "end-4/dots-hyprland",
+      social: {
+        github: "https://github.com/end-4/dots-hyprland",
       },
-      customCss: ['./src/styles/custom.css'],
-      tableOfContents: { minHeadingLevel: 1, maxHeadingLevel: 2, },
-      favicon: './favicon.ico',
+      editLink: {
+        baseUrl: "https://github.com/end-4/dots-hyprland-wiki/tree/main",
+      },
+      customCss: ["./src/styles/custom.css"],
+      tableOfContents: { minHeadingLevel: 1, maxHeadingLevel: 2 },
+      favicon: "./favicon.ico",
       lastUpdated: true,
-      defaultLocale: 'en',
+      defaultLocale: "en",
       // English docs in `src/content/docs/en/`
       // Other lang docs in `src/content/docs/<lang>/`
       // See also https://github.com/CloudCannon/pagefind/tree/main/pagefind_ui/translations
       locales: {
-        'en': {
-          label: 'English', // Engligh
-          lang: 'en',
+        en: {
+          label: "English", // Engligh
+          lang: "en",
         },
         // 'fr': {
         //   label: 'French', //French
@@ -47,60 +47,60 @@ export default defineConfig({
         //   label: 'Turkish', //Turkish
         //   lang: 'tr',
         // },
-        'vi': {
-          label: 'Tiếng Việt', // Vietnamese
-          lang: 'vi',
+        vi: {
+          label: "Tiếng Việt", // Vietnamese
+          lang: "vi",
         },
-        'zh-cn': {
-          label: '简体中文', //Simplified Chinese
-          lang: 'zh-CN',
+        "zh-cn": {
+          label: "简体中文", //Simplified Chinese
+          lang: "zh-CN",
         },
       },
       sidebar: [
         {
-          label: 'General',
+          label: "General",
           translations: {
-            'vi': 'Chung',
-            'zh-CN': '通用',
+            vi: "Chung",
+            "zh-CN": "通用",
           },
-          autogenerate: { directory: 'general' },
+          autogenerate: { directory: "general" },
         },
         {
-          label: 'Illogical Impulse',
+          label: "Illogical Impulse",
           // idk how to translate badge for group label, guess just a "New" should be ok to everyone though.
-          badge: { text: 'New', variant: 'success' },
+          badge: { text: "New", variant: "success" },
           // idk why but it won't work when using `illogical-impulse'
-					autogenerate: { directory: 'i-i' },
-				},
-				{
-					label: 'Archives (unmaintained)',
+          autogenerate: { directory: "i-i" },
+        },
+        {
+          label: "Archives (unmaintained)",
           collapsed: true,
           translations: {
-            'vi': 'Kho lưu trữ (ko đc duy trì)',
-            'zh-CN': '存档（不再维护）',
+            vi: "Kho lưu trữ (ko đc duy trì)",
+            "zh-CN": "存档（不再维护）",
           },
-					autogenerate: { directory: 'archives' },
-				},
-				{
-					label: 'Dev Notes',
+          autogenerate: { directory: "archives" },
+        },
+        {
+          label: "Dev Notes",
           collapsed: true,
-          badge: { text: 'Dev' },
+          badge: { text: "Dev" },
           translations: {
-            'vi': 'Ghi chú cho dev',
-            'zh-CN': '开发者笔记',
+            vi: "Ghi chú cho dev",
+            "zh-CN": "开发者笔记",
           },
-					autogenerate: { directory: 'dev' },
-				},
-				{
-					label: 'Translate this wiki',
+          autogenerate: { directory: "dev" },
+        },
+        {
+          label: "Translate this wiki",
           collapsed: true,
-          badge: { text: 'Help wanted', variant: 'note' },
+          badge: { text: "Help wanted", variant: "note" },
           translations: {
-            'zh-CN': '翻译此文档',
+            "zh-CN": "翻译此文档",
           },
-          link: '/dev/doc-site-contrib',
-				},
-			],
-		}),
-	],
+          link: "/dev/doc-site-contrib",
+        },
+      ],
+    }),
+  ],
 });
