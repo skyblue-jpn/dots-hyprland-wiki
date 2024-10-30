@@ -62,6 +62,7 @@ export default defineConfig({
           translations: {
             vi: "Chung",
             "zh-CN": "通用",
+            ja: "一般",
           },
           autogenerate: { directory: "general" },
         },
