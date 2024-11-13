@@ -1,5 +1,5 @@
 ---
-title: 展示
+title: デモ
 lastUpdated: 2024-02-18
 ---
 
